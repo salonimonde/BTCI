@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="bPalFontColor">#00BCD4</color>
+    <color name="googlePlusSignInRed">#DC4E41</color>
+    <color name="facebookSignInBlue">#4D6FA9</color>
+    <color name="text_color_white">#ffffff</color>
+    <color name="btn_color_orange">#DC630A</color>
+    <color name="text_color_grey">#9B9B9B</color>
+    <color name="edittext_color">#E7E7E7</color>
+    <color name="text_color_black">#000000</color>
 </resources>
