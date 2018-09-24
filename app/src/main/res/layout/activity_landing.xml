@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LandingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_action_profile_app_bar_image"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_action_hamburger_icon"
+                android:background="@null"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/arista_font"
+                android:text="@string/bpal"
+                android:textColor="@color/text_color_white"
+                android:textSize="30sp" />
+
+          
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_landing"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+        </android.support.v7.widget.Toolbar>
+        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tablayout_landing"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:tabGravity="fill"
+            app:tabMode="fixed"
+            android:layout_marginHorizontal="20dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_landing"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+</RelativeLayout>

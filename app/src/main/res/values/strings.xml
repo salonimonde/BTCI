@@ -46,4 +46,9 @@
 
     </string-array>
 
+    <string name="whats_up">What\'s Up</string>
+    <string name="tech_bites">Tech Bites</string>
+    <string name="bazaar">Bazaar</string>
+    <string name="connect">Connect</string>
+
 </resources>
