@@ -51,4 +51,45 @@
     <string name="bazaar">Bazaar</string>
     <string name="connect">Connect</string>
 
+
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="quiz">Quiz</string>
+    <string name="my_feedback">My Feedback</string>
+    <string name="saved_posts_and_adds">Saved Posts and Ads</string>
+    <string name="settings">Settings</string>
+    <string name="assist">Assist</string>
+    <string name="logout">Logout</string>
+
+    <string name="human_resource">Human Resource</string>
+    <string name="security">Security</string>
+    <string name="it_department">IT Department</string>
+    <string name="transport_facility">Transport Facility</string>
+    <string name="b.pal_assit">B.Pal Assist</string>
+
+
+    <string name="how_will_you_rate_your_safety_at_a_workplace">
+        How will you rate your safety at a work-place?</string>
+    <string name="tell_us_more">Tell us more...</string>
+
+    <string name="alok_dekhane">Alok Dekhane</string>
+    <string name="_1st_july_2017">1st July 2017</string>
+    <string name="inspirational">Inspirational</string>
+    <string name="worth_visiting_place_mahabaleshwar">Worth visiting place : Mahabaleshwar:)</string>
+
+
+
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+
+
+
+
 </resources>

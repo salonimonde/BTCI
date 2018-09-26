@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/group_home">
+        <item
+            android:id="@+id/hamburger_home"
+            android:title="@string/home">
+        </item>
+    </group>
+    <group android:id="@+id/group_profile">
+         <item
+            android:id="@+id/hamburger_profile"
+            android:title="@string/profile"
+            />
+    </group>
+    <group android:id="@+id/group_quiz">
+        <item
+            android:id="@+id/hamburger_quiz"
+            android:title="@string/quiz"/>
+    </group>
+    <group android:id="@+id/group_my_feedback">
+        <item
+            android:id="@+id/hamburger_my_feedback"
+            android:title="@string/my_feedback"/>
+    </group>
+    <group android:id="@+id/group_saved_posts_and_ads">
+        <item
+            android:id="@+id/hamburger_saved_posts_and_ads"
+            android:title="@string/saved_posts_and_adds"/>
+    </group>
+    <group android:id="@+id/group_settings">
+        <item
+            android:id="@+id/hamburger_settings"
+            android:title="@string/settings"/>
+    </group>
+    <group android:id="@+id/group_assist">
+        <item
+            android:id="@+id/hamburger_assist"
+            android:title="@string/assist"/>
+    </group>
+    <group android:id="@+id/group_logout">
+        <item
+            android:id="@+id/hamburger_logout"
+            android:title="@string/logout"/>
+
+    </group>
+
+</menu>

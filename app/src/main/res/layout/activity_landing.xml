@@ -2,9 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".activity.LandingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -16,13 +21,14 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
-            <ImageButton
+            <ImageView
+                android:id="@+id/imgbtn_hamburger"
                 android:layout_width="30dp"
-                android:layout_height="35dp"
+                android:layout_height="25dp"
                 android:src="@drawable/ic_action_hamburger_icon"
                 android:background="@null"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="15dp"
                 />
 
             <TextView
@@ -32,9 +38,30 @@
                 android:fontFamily="@font/arista_font"
                 android:text="@string/bpal"
                 android:textColor="@color/text_color_white"
-                android:textSize="30sp" />
+                android:textSize="40sp" />
 
-          
+            <ImageView
+                android:id="@+id/imgbtn_search"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_action_search_icon"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/imgbtn_sort_refine"
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_action_sort_refine"
+                android:background="@null"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="15dp"/>
+
+
+
         </RelativeLayout>
 
 
@@ -55,9 +82,12 @@
             android:layout_height="70dp"
             app:tabGravity="fill"
             app:tabMode="fixed"
-            android:layout_marginHorizontal="20dp"/>
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
 
     </android.support.design.widget.AppBarLayout>
+
+
 
 
     <android.support.v4.view.ViewPager
@@ -65,6 +95,48 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
+
+        <android.support.v4.widget.DrawerLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:openDrawer="start"
+            >
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@color/btn_color_orange"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/ic_action_plus_icon"
+        android:scaleType="fitXY"
+        app:fabSize="auto"
+        />
+
+
+
+        <android.support.design.widget.NavigationView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:headerLayout="@layout/hamburger_header"
+            app:menu="@menu/hamburger_drawer"
+            app:itemTextColor="@color/bPalFontColor">
+
+
+        </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+
+
+
+    </RelativeLayout>
+
+
 
 
 </RelativeLayout>
