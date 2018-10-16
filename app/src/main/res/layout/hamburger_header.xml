@@ -8,58 +8,55 @@
         android:id="@+id/linear_layout_header_profile_image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-    <LinearLayout
 
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/image_shape"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="30dp"
-        android:gravity="center"
-        android:orientation="vertical">
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:src="@drawable/ic_action_profile_picture"
-        />
+        <LinearLayout
 
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/image_shape"
+            android:gravity="center"
+            android:orientation="vertical">
 
-
-    </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_action_profile_picture" />
 
 
-
+        </LinearLayout>
 
 
     </LinearLayout>
+
     <RatingBar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="0dp"
         android:layout_marginTop="20dp"
-        android:rating="5"
+        android:layout_toEndOf="@+id/linear_layout_header_profile_image"
+        android:backgroundTint="@color/text_color_white"
         android:numStars="5"
-        android:theme="@style/RatingBar"
-        android:layout_marginStart="50dp"
+        android:rating="5"
         android:scaleX="0.4"
         android:scaleY="0.4"
-        android:backgroundTint="@color/text_color_white"
-        android:layout_toEndOf="@+id/linear_layout_header_profile_image"
-        android:layout_centerInParent="true"
-        android:layout_alignParentStart="true"
-        />
-
+        android:theme="@style/RatingBar" />
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_header_profile_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/alok_dekhane"
         android:textColor="@color/bPalFontColor"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:textStyle="bold"
-        android:layout_below="@+id/linear_layout_header_profile_image"
 
 
         />

@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">BpalApplication</string>
+    <string name="app_name"> </string>
     <string name="bpal">B.Pal</string>
     <string name="login_with_personal_credentials">Login with personal credentials!</string>
     <string name="login_with_google">Login with Google</string>
@@ -29,6 +29,33 @@
     <string name="_6_to_9_years">6 to 9 Years</string>
     <string name="_9_to_12_years">9 to 12 Years</string>
     <string name="more_than_12_years">More than 12 Years</string>
+
+
+    <string name="_3rd_july_2017">3rd July 2017</string>
+    <string name="_43">43</string>
+    <string name="comma">,</string>
+    <string name="tech_query">Tech query : </string>
+    <string name="looking_for_html_css_expertise_no_of_req_5">Looking for HTML/CSS expertise, No. of req. 5</string>
+    <string name="priyanka_chhetri">Priyanka Chhetri</string>
+
+
+
+
+    <string name="cancel">Cancel</string>
+    <string name="apply">Apply</string>
+
+
+    <string name="refine_your_interests">Refine Your Interests</string>
+
+    <string name="most_trending">Most Trending</string>
+    <string name="most_recent">Most Recent</string>
+
+
+    <string name="travel">Travel</string>
+    <string name="food">Food</string>
+    <string name="fitness_and_wellness">Fitness &amp; Wellness</string>
+    <string name="technology">Technology</string>
+    <string name="party">Party</string>
 
     <string-array name="location">
         <item>@string/location</item>

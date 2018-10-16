@@ -11,4 +11,5 @@
     <color name="text_color_grey">#9B9B9B</color>
     <color name="edittext_color">#E7E7E7</color>
     <color name="text_color_black">#000000</color>
+    <color name="checkbox_border">#E6E8ED</color>
 </resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".activity.LandingActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_action_profile_app_bar_image"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/imgbtn_hamburger"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_action_hamburger_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/arista_font"
+                    android:text="@string/bpal"
+                    android:textColor="@color/text_color_white"
+                    android:textSize="40sp" />
+
+                <ImageView
+                    android:id="@+id/imgbtn_search"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_action_search_icon" />
+
+                <ImageView
+                    android:id="@+id/imgbtn_sort_refine"
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@null"
+                    android:src="@drawable/ic_action_sort_refine" />
+
+
+            </RelativeLayout>
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_landing"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                app:layout_scrollFlags="scroll|enterAlways">
+
+
+            </android.support.v7.widget.Toolbar>
+            <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_landing"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                app:tabGravity="fill"
+                app:tabMode="fixed" />
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_landing"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

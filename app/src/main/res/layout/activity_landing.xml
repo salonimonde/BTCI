@@ -1,142 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    tools:context=".activity.LandingActivity">
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <RelativeLayout
+        android:id="@+id/mainView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" >
 
-
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_action_profile_app_bar_image"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <RelativeLayout
+        <include
+            layout="@layout/app_bar_landing"
             android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <ImageView
-                android:id="@+id/imgbtn_hamburger"
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_action_hamburger_icon"
-                android:background="@null"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/arista_font"
-                android:text="@string/bpal"
-                android:textColor="@color/text_color_white"
-                android:textSize="40sp" />
-
-            <ImageView
-                android:id="@+id/imgbtn_search"
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_action_search_icon"
-                android:background="@null"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="50dp"
-                android:layout_marginTop="15dp"/>
-
-            <ImageView
-                android:id="@+id/imgbtn_sort_refine"
-                android:layout_width="30dp"
-                android:layout_height="25dp"
-                android:src="@drawable/ic_action_sort_refine"
-                android:background="@null"
-                android:layout_alignParentRight="true"
-                android:layout_marginEnd="10dp"
-                android:layout_marginTop="15dp"/>
-
-
-
-        </RelativeLayout>
-
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_landing"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            app:layout_scrollFlags="scroll|enterAlways">
-
-
-        </android.support.v7.widget.Toolbar>
-        <!--android:theme="@style/Theme.AppCompat.Light.NoActionBar"-->
-
-
-        <android.support.design.widget.TabLayout
-            android:id="@+id/tablayout_landing"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            app:tabGravity="fill"
-            app:tabMode="fixed"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"/>
-
-    </android.support.design.widget.AppBarLayout>
-
-
-
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager_landing"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-
-        <android.support.v4.widget.DrawerLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:openDrawer="start"
-            >
-
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:backgroundTint="@color/btn_color_orange"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/ic_action_plus_icon"
-        android:scaleType="fitXY"
-        app:fabSize="auto"
-        />
-
-
-
-        <android.support.design.widget.NavigationView
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:headerLayout="@layout/hamburger_header"
-            app:menu="@menu/hamburger_drawer"
-            app:itemTextColor="@color/bPalFontColor">
-
-
-        </android.support.design.widget.NavigationView>
-
-        </android.support.v4.widget.DrawerLayout>
-
-
-
+            android:layout_height="match_parent" />
 
     </RelativeLayout>
 
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view_left"
+            android:layout_marginTop="145dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/hamburger_header"
+            app:menu="@menu/hamburger_drawer"
+            app:itemTextColor="@color/bPalFontColor"/>
 
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view_right"
+            android:layout_marginTop="145dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/refining_trey_whats_up"
+            app:itemTextColor="@color/text_color_black"/>
 
-
-</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

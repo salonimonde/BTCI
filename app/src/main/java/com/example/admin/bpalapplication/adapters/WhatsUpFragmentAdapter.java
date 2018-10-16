@@ -14,17 +14,18 @@ import com.example.admin.bpalapplication.R;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragmentAdapter.WhatsUpFragmentHolder>{
+public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragmentAdapter.WhatsUpFragmentHolder> {
 
     private Context mContext;
 
-    public WhatsUpFragmentAdapter(Context context){
+    public WhatsUpFragmentAdapter(Context context) {
         this.mContext = context;
     }
+
     @Override
     public WhatsUpFragmentHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_whats_up_card,null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cell_whats_up_card, null);
         WhatsUpFragmentAdapter.WhatsUpFragmentHolder viewHolder = new WhatsUpFragmentAdapter.WhatsUpFragmentHolder(view);
         return viewHolder;
     }
@@ -32,28 +33,49 @@ public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragment
     @Override
     public void onBindViewHolder(WhatsUpFragmentHolder holder, int position) {
 
+        holder.txtName.setText(R.string.alok_dekhane);
+        holder.txtDate.setText(R.string._1st_july_2017);
+        holder.txtPostHeading.setText(R.string.worth_visiting_place_mahabaleshwar);
+        holder.circleImageViewProfile.setImageResource(R.drawable.ic_action_profile_picture);
+        holder.imgPhotoOne.setImageResource(R.drawable.ic_action_group_photo_one);
+        holder.imgPhotoTwo.setImageResource(R.drawable.ic_action_group_photo_two);
+        holder.imgPhotoThree.setImageResource(R.drawable.ic_action_group_photo_three);
+        holder.imgPhotofour.setImageResource(R.drawable.ic_action_group_photo_four);
+
+
+
+
+
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return 2;
     }
 
     public class WhatsUpFragmentHolder extends RecyclerView.ViewHolder {
 
-        public LinearLayout linearLayoutWhatsUp;
+        public LinearLayout linearLayoutWhatsUp, linearRowOne, linearRowTwo;
         public CircleImageView circleImageViewProfile;
-        public TextView txtName,txtPostType,txtDate,txtPostHeading;
-        public ImageView imgPhotoOne,imgPhotoTwo,imgPhotoThree,imgPhotofour;
+        public TextView txtName, txtPostType, txtDate, txtPostHeading, txtPostOne;
+        public ImageView imgPhotoOne, imgPhotoTwo, imgPhotoThree, imgPhotofour;
+
         public WhatsUpFragmentHolder(View itemView) {
             super(itemView);
 
             linearLayoutWhatsUp = (LinearLayout) itemView.findViewById(R.id.recycler_view_whats_up);
-            circleImageViewProfile = (CircleImageView) itemView.findViewById(R.id.circle_img_profile);
-            txtName = (TextView) itemView.findViewById(R.id.txt_card_name);
-            txtPostType = (TextView) itemView.findViewById(R.id.txt_card_post_type);
-            txtDate = (TextView) itemView.findViewById(R.id.txt_card_date);
-            txtPostHeading = (TextView) itemView.findViewById(R.id.txt_post_heading);
+            linearRowOne = (LinearLayout) itemView.findViewById(R.id.linear_row_one);
+            linearRowTwo = (LinearLayout) itemView.findViewById(R.id.linear_row_two);
+            circleImageViewProfile = (CircleImageView) itemView.findViewById(R.id.circle_img_profile_one);
+            txtName = (TextView) itemView.findViewById(R.id.txt_card_name_one);
+            txtPostType = (TextView) itemView.findViewById(R.id.txt_card_post_type_one);
+            txtDate = (TextView) itemView.findViewById(R.id.txt_card_date_one);
+            txtPostHeading = (TextView) itemView.findViewById(R.id.txt_post_heading_one);
+            txtPostOne = (TextView) itemView.findViewById(R.id.txt_post_one);
+            imgPhotoOne = (ImageView) itemView.findViewById(R.id.img_one_group_photo_one);
+            imgPhotoTwo = (ImageView) itemView.findViewById(R.id.img_one_group_photo_two);
+            imgPhotoThree = (ImageView) itemView.findViewById(R.id.img_one_group_photo_three);
+            imgPhotofour = (ImageView) itemView.findViewById(R.id.img_one_group_photo_four);
         }
     }
 }
