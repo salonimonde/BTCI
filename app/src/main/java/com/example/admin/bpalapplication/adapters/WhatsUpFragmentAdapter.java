@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import com.example.admin.bpalapplication.R;
 
+import org.w3c.dom.Text;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragmentAdapter.WhatsUpFragmentHolder> {
@@ -41,6 +43,11 @@ public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragment
         holder.imgPhotoTwo.setImageResource(R.drawable.ic_action_group_photo_two);
         holder.imgPhotoThree.setImageResource(R.drawable.ic_action_group_photo_three);
         holder.imgPhotofour.setImageResource(R.drawable.ic_action_group_photo_four);
+        if (holder.linearPost.getVisibility() == View.VISIBLE){
+
+            holder.txtPostMain.setText(R.string.looking_for_html_css_expertise_no_of_req_5);
+
+        }
 
 
 
@@ -50,14 +57,14 @@ public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragment
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 5;
     }
 
     public class WhatsUpFragmentHolder extends RecyclerView.ViewHolder {
 
-        public LinearLayout linearLayoutWhatsUp, linearRowOne, linearRowTwo;
+        public LinearLayout linearLayoutWhatsUp, linearRowOne, linearRowTwo, linearPost;
         public CircleImageView circleImageViewProfile;
-        public TextView txtName, txtPostType, txtDate, txtPostHeading, txtPostOne;
+        public TextView txtName, txtPostType, txtDate, txtPostHeading, txtPostOne, txtPostMain;
         public ImageView imgPhotoOne, imgPhotoTwo, imgPhotoThree, imgPhotofour;
 
         public WhatsUpFragmentHolder(View itemView) {
@@ -66,12 +73,14 @@ public class WhatsUpFragmentAdapter extends RecyclerView.Adapter<WhatsUpFragment
             linearLayoutWhatsUp = (LinearLayout) itemView.findViewById(R.id.recycler_view_whats_up);
             linearRowOne = (LinearLayout) itemView.findViewById(R.id.linear_row_one);
             linearRowTwo = (LinearLayout) itemView.findViewById(R.id.linear_row_two);
+            linearPost = (LinearLayout) itemView.findViewById(R.id.linear_post);
             circleImageViewProfile = (CircleImageView) itemView.findViewById(R.id.circle_img_profile_one);
             txtName = (TextView) itemView.findViewById(R.id.txt_card_name_one);
             txtPostType = (TextView) itemView.findViewById(R.id.txt_card_post_type_one);
             txtDate = (TextView) itemView.findViewById(R.id.txt_card_date_one);
             txtPostHeading = (TextView) itemView.findViewById(R.id.txt_post_heading_one);
             txtPostOne = (TextView) itemView.findViewById(R.id.txt_post_one);
+            txtPostMain = (TextView) itemView.findViewById(R.id.txt_post_main);
             imgPhotoOne = (ImageView) itemView.findViewById(R.id.img_one_group_photo_one);
             imgPhotoTwo = (ImageView) itemView.findViewById(R.id.img_one_group_photo_two);
             imgPhotoThree = (ImageView) itemView.findViewById(R.id.img_one_group_photo_three);

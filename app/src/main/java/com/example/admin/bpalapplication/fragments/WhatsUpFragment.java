@@ -10,6 +10,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.example.admin.bpalapplication.R;
 import com.example.admin.bpalapplication.adapters.WhatsUpFragmentAdapter;
@@ -18,6 +19,7 @@ public class WhatsUpFragment extends Fragment {
 
     private StaggeredGridLayoutManager staggeredGridLayoutManager;
     private RecyclerView recyclerView;
+    private TextView txtDate;
 
     public WhatsUpFragment() {
     }
@@ -32,6 +34,8 @@ public class WhatsUpFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
 
         View rootView =  inflater.inflate(R.layout.activity_whats_up_fragment, container, false);
+
+        txtDate = (TextView) rootView.findViewById(R.id.txt_date);
 
         WhatsUpFragmentAdapter adapter = new WhatsUpFragmentAdapter(this.getContext());
 

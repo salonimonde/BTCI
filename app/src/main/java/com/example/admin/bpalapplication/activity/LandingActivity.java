@@ -112,27 +112,32 @@ public class LandingActivity extends AppCompatActivity {
             }
         });
 
+
     }
 
     private void setupTabIcons() {
 
         TextView tabWhatsUp = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         tabWhatsUp.setText(R.string.whats_up);
+        tabWhatsUp.setTextSize(11);
         tabWhatsUp.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_action_whats_up, 0, 0);
         tabLayout.getTabAt(0).setCustomView(tabWhatsUp);
 
         TextView tabTechBites = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         tabTechBites.setText(R.string.tech_bites);
+        tabTechBites.setTextSize(11);
         tabTechBites.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_action_tech_bites, 0, 0);
         tabLayout.getTabAt(1).setCustomView(tabTechBites);
 
         TextView tabBazaar = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         tabBazaar.setText(R.string.bazaar);
+        tabBazaar.setTextSize(11);
         tabBazaar.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_action_bazaar, 0, 0);
         tabLayout.getTabAt(2).setCustomView(tabBazaar);
 
         TextView tabConnect = (TextView) LayoutInflater.from(this).inflate(R.layout.custom_tab, null);
         tabConnect.setText(R.string.connect);
+        tabConnect.setTextSize(11);
         tabConnect.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.ic_action_connect, 0, 0);
         tabLayout.getTabAt(3).setCustomView(tabConnect);
     }

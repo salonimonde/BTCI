@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TechBitesFragment">
+    tools:context=".fragments.TechBitesFragment"
+    android:orientation="vertical"
+    android:paddingTop="120dp">
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/today_13th_july_2017"
+        android:textColor="@color/bPalFontColor"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_tech_bites"
@@ -12,5 +24,7 @@
         android:layout_height="match_parent">
 
     </android.support.v7.widget.RecyclerView>
+
+
 
 </LinearLayout>

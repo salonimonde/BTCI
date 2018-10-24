@@ -29,6 +29,42 @@
     <string name="_6_to_9_years">6 to 9 Years</string>
     <string name="_9_to_12_years">9 to 12 Years</string>
     <string name="more_than_12_years">More than 12 Years</string>
+    <string name="today_13th_july_2017">Today, 13th July 2017</string>
+
+    <string name="economic_concepts_consumers_need_to_know">Economic concepts consumers need to know</string>
+    <string name="the_over_the_counter_is_not_an_actual_exchange_like_the_nyse_or_nasdaq_instead_it_is_a_network_of_companies_that">
+        The over-the-counter market is not an actual exchange like the NYSE or Nasdaq. Instead it is a network of companies that...
+    </string>
+
+    <string name="_6_technology_trends_that_arent_ai_blockchain_or_vr">6 Technology Trends That Aren\'t AI, Blockchain or VR</string>
+    <string name="it_is_a_long_established_fact_that_a_reader_will_be_distracted_by_the_readable_content_of_a_page_when_looking_at_its">
+        It is a long establish fact that a reader will be distracted by the readable content of a page when looking at its...</string>
+
+    <string name="the_near_future_of_technology">The (Near) Future of Technology</string>
+
+
+
+    <string name="more_tech_bites">More Tech Bites</string>
+
+    <string name="_13th_july_2017">13th July 2017</string>
+
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="save_post">Save Post</string>
+
+    <string name="mark_weins">Mark Weins</string>
+    <string name="a_must_read_for_people_investing_in_consumer_products_and_technology">A must read for people investing in consumer products and technology</string>
+
+    <string name="molly_rodge">Molly Rodge</string>
+    <string name="very_helpful_would_definitely_use_these_tips_for_my_car_thanks">
+        Very helpful.Would definitelt use these tips for my car. Thanks!
+    </string>
+
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industrys_standard_dummy_text_ever_since_the_1500s_when_an_unknwon_printer_took_a_galley_of_type_and_scrambled_it_to_make_a_type_specimen_book_it_has_survived_not_only_five_centuries_but_also_the_leap_into_electronic_typesetting_remaining_essentially_unchanged">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of
+        type and scrambled it to make a type specimen book. It has survived not only five centuries , but also the leap into electronic typesetting,
+        remaining essentially unchanged.
+    </string>
 
 
     <string name="_3rd_july_2017">3rd July 2017</string>
@@ -37,8 +73,6 @@
     <string name="tech_query">Tech query : </string>
     <string name="looking_for_html_css_expertise_no_of_req_5">Looking for HTML/CSS expertise, No. of req. 5</string>
     <string name="priyanka_chhetri">Priyanka Chhetri</string>
-
-
 
 
     <string name="cancel">Cancel</string>
@@ -105,7 +139,6 @@
     <string name="worth_visiting_place_mahabaleshwar">Worth visiting place : Mahabaleshwar:)</string>
 
 
-
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -113,10 +146,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
-
-
-
 
 
 </resources>

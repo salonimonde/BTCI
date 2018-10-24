@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/linear_layout_whats_up"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:weightSum="2">
 
@@ -28,8 +28,8 @@
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/circle_img_profile_one"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
                 android:src="@drawable/ic_action_profile_picture" />
 
 
@@ -88,7 +88,7 @@
                 android:text="@string/tech_query"
                 android:textColor="@color/text_color_black"
                 android:textSize="15sp"
-                android:visibility="visible"/>
+                android:visibility="visible" />
 
             <TextView
                 android:id="@+id/txt_post_one"
@@ -101,14 +101,13 @@
 
             <LinearLayout
                 android:id="@+id/linear_row_one"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginEnd="30dp"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:visibility="gone">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/img_one_group_photo_one"
@@ -128,11 +127,10 @@
 
             <LinearLayout
                 android:id="@+id/linear_row_two"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="30dp"
-                android:orientation="horizontal"
-                android:visibility="gone">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/img_one_group_photo_three"
@@ -149,6 +147,8 @@
                     android:src="@drawable/ic_action_group_photo_four" />
 
             </LinearLayout>
+
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -201,8 +201,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:elevation="10dp"
-        android:visibility="gone"
-        >
+        android:visibility="gone">
 
         <LinearLayout
             android:id="@+id/linear_layout_profile_image_two"
@@ -288,51 +287,21 @@
 
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/linear_post"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginEnd="30dp"
-                android:layout_marginTop="10dp"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:visibility="gone">
+                android:visibility="visible">
 
-                <ImageView
-                    android:id="@+id/img_two_group_photo_one"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_action_group_photo_one" />
 
-                <ImageView
-                    android:id="@+id/img_two_group_photo_two"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_action_group_photo_two" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="30dp"
-                android:visibility="gone"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/img_two_group_photo_three"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_action_group_photo_three" />
-
-                <ImageView
-                    android:id="@+id/img_two_group_photo_four"
-                    android:layout_width="80dp"
-                    android:layout_height="70dp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/ic_action_group_photo_four" />
+                <TextView
+                    android:id="@+id/txt_post_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -354,7 +323,7 @@
                     android:layout_marginStart="5dp"
                     android:text="@string/_43"
                     android:textColor="@color/text_color_black"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -363,7 +332,7 @@
                     android:gravity="center"
                     android:text="@string/comma"
                     android:textColor="@color/text_color_grey"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -372,7 +341,7 @@
                     android:gravity="center"
                     android:text="@string/_3rd_july_2017"
                     android:textColor="@color/text_color_grey"
-                    android:textSize="12sp"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
         </LinearLayout>
